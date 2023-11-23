@@ -29,7 +29,7 @@ class HeaderBottomMainPage extends Component {
   optionRenderer(item) {
     return (
       <div className={`img-item item-${item.id}`}>
-        <img alt="" src={`/images/${item.id}.svg`} />
+        <img loading="lazy" alt="" src={`/images/${item.id}.svg`} />
         <div>
           <strong>{item.city}</strong>
           <br />
@@ -110,7 +110,11 @@ class HeaderBottomMainPage extends Component {
                 <section className="star">
                   <div className="star-div">
                     <div className="google-marker">
-                      <img src="/images/design/google.svg" alt="" />
+                      <img
+                        loading="lazy"
+                        src="/images/design/google.svg"
+                        alt=""
+                      />
                       <span>4.9</span>
                     </div>
                     <div className="star-marker">
@@ -206,7 +210,11 @@ class HeaderBottomMainPage extends Component {
                     className="col-md-3 col-sm-4 title-image"
                     style={{ paddingTop: "15px" }}
                   >
-                    <img src="/images/design/tophand.svg" alt="Kaufen" />
+                    <img
+                      loading="lazy"
+                      src="/images/design/tophand.svg"
+                      alt="Kaufen"
+                    />
                   </p>
                 </section>
 

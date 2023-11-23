@@ -105,7 +105,7 @@ const WishlistPage = (props) => {
         <div className='wishlist-page'>
             <div className="container-fluid">
                 <div className="navigation-row">
-                    <Link to="/"><img src="/images/design/house-icon.svg" alt="" /></Link>
+                    <Link to="/"><img loading="lazy" src="/images/design/house-icon.svg" alt="" /></Link>
                     <span>Wunschliste</span>
                 </div>
                 <div className="wishlist-wrapper">
@@ -141,10 +141,10 @@ const WishlistPage = (props) => {
                                     return (
                                         <div className="item" key={`wishlist-devices-${i}`} onClick={(e) => handleOpenDeviceDetailPage(deviceName,modelName,capacity,color, el.shortcode)}>
                                             <button className='icon-cross'>
-                                                <img src="/images/icon-cross.svg" alt="" onClick={(e) => handleRemoveModelFromWishlist(e, el)}/>
+                                                <img loading="lazy" src="/images/icon-cross.svg" alt="" onClick={(e) => handleRemoveModelFromWishlist(e, el)}/>
                                             </button>
                                             <div className="item-img">
-                                                <img src={el.deviceImages ? el.deviceImages.mainImg.src : '/images/design/Product.svg'} alt=""/>
+                                                <img loading="lazy" src={el.deviceImages ? el.deviceImages.mainImg.src : '/images/design/Product.svg'} alt=""/>
                                             </div>
                                             <div className="item-description">
                                                 <p>{el.model}, {el.color}, {el.capacity}</p>
@@ -165,10 +165,10 @@ const WishlistPage = (props) => {
                                     return (
                                         <div className="item" key={`wishlist-products-${i}`} onClick={(e) => handleOpenProductDetailPage(deviceName, modelName, el.shortcode)}>
                                             <button className='icon-cross'>
-                                                <img src="/images/icon-cross.svg" alt="" onClick={(e) => handleRemoveModelFromWishlist(e, el)}/>
+                                                <img loading="lazy" src="/images/icon-cross.svg" alt="" onClick={(e) => handleRemoveModelFromWishlist(e, el)}/>
                                             </button>
                                             <div className="item-img">
-                                                <img src={el.deviceImages ? el.deviceImages.mainImg.src : '/images/design/Product.svg'} alt=""/>
+                                                <img loading="lazy" src={el.deviceImages ? el.deviceImages.mainImg.src : '/images/design/Product.svg'} alt=""/>
                                             </div>
                                             <div className="item-description">
                                                 <p>{el.model}</p>

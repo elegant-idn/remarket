@@ -146,7 +146,7 @@ const OtherProducts = ({similarItems, basketActions, basketData, wishlistData}) 
                 <div style={itemWrap}>
                     <div className='item' onClick={() => handleOpenDetailPage(deviceName, modelName, capacity, color, model.shortcode)}>
                         <div className="img">
-                            <img src={model.colorImage || model.deviceImages.mainImg.src} alt="" />
+                            <img loading="lazy" src={model.colorImage || model.deviceImages.mainImg.src} alt="" />
                             <i className="modelInfoBlock-img-small-searchBtn"
                                 onClick={() => openLightBox(model)}
                                 aria-hidden="true">
@@ -180,8 +180,8 @@ const OtherProducts = ({similarItems, basketActions, basketData, wishlistData}) 
                             </div>
                         </div>
                         <span className="small-description">{description}</span>
-                        <span className='details'><img src="/images/otherProdLocation.svg" alt="" />{model.placeDescription}</span>
-                        <span className='details'><img src="/images/otherProdState.svg" alt="" />{model.condition}</span>
+                        <span className='details'><img loading="lazy" src="/images/otherProdLocation.svg" alt="" />{model.placeDescription}</span>
+                        <span className='details'><img loading="lazy" src="/images/otherProdState.svg" alt="" />{model.condition}</span>
                         <div className="cost-block">
                             <div className="cost">
                                 <div className='price-wrap'>
@@ -193,7 +193,7 @@ const OtherProducts = ({similarItems, basketActions, basketData, wishlistData}) 
                                 <span>ab {monthPrice} CHF/Monat</span>
                             </div>
                             <button className='add-cart' onClick={ (e) => addToBasket(e, model)} >
-                                <img src="/images/otherProdCart.svg" alt="" />
+                                <img loading="lazy" src="/images/otherProdCart.svg" alt="" />
                             </button>
                         </div>
                     </div>

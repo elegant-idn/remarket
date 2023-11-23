@@ -85,7 +85,9 @@ export class CustomerAboutUs extends Component {
       <div className="col-xs-12 itemCustomer" key={`ItemReview-${index}`}>
         <React.Fragment>
           <div className="avatar">
-            {item.googleRating && <img src={item.photo} alt="" />}
+            {item.googleRating && (
+              <img loading="lazy" src={item.photo} alt="" />
+            )}
             {!item.googleRating && item.anonym === 1 && (
               <span>{item.name}</span>
             )}

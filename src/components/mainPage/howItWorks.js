@@ -1,10 +1,16 @@
-import React from 'react'
-import { SimpleImg } from 'react-simple-img'
-import Slider from 'react-slick'
+import React from "react";
+import { SimpleImg } from "react-simple-img";
+import Slider from "react-slick";
 
 const HowItWorks = () => {
-  let url = window.domainName.name === 'remarket.ch' ? 'https://www.youtube.com/embed/JfIWohNjpjk?autoplay=true' : 'https://www.youtube.com/embed/PH7pguELBlg?autoplay=true',
-    url2 = window.domainName.name === 'remarket.ch' ? 'https://www.youtube.com/embed/JfIWohNjpjk?autoplay=true&amp;rel=0&amp;showinfo=0' : 'https://www.youtube.com/embed/PH7pguELBlg?autoplay=true&amp;rel=0&amp;showinfo=0';
+  let url =
+      window.domainName.name === "remarket.ch"
+        ? "https://www.youtube.com/embed/JfIWohNjpjk?autoplay=true"
+        : "https://www.youtube.com/embed/PH7pguELBlg?autoplay=true",
+    url2 =
+      window.domainName.name === "remarket.ch"
+        ? "https://www.youtube.com/embed/JfIWohNjpjk?autoplay=true&amp;rel=0&amp;showinfo=0"
+        : "https://www.youtube.com/embed/PH7pguELBlg?autoplay=true&amp;rel=0&amp;showinfo=0";
 
   function mapPeriodsVerkaufen() {
     if (!window.isMobile) {
@@ -12,78 +18,134 @@ const HowItWorks = () => {
         <React.Fragment>
           <div className="col-sm-6 col-md-3 itemPeriod">
             <div className="image">
-              <div className="num"><img src="images/design/1.svg" alt="" /></div>
-              <img src="images/design/estimate-icon.svg" alt="" />
+              <div className="num">
+                <img loading="lazy" src="images/design/1.svg" alt="" />
+              </div>
+              <img
+                loading="lazy"
+                src="images/design/estimate-icon.svg"
+                alt=""
+              />
             </div>
             <h4>Preis berechnen</h4>
-            <p>Wählen Sie den Zustand Ihres Gerätes aus und Sie erhalten direkt einen fairen Ankaufspreis.</p>
+            <p>
+              Wählen Sie den Zustand Ihres Gerätes aus und Sie erhalten direkt
+              einen fairen Ankaufspreis.
+            </p>
           </div>
           <div className="col-sm-6 col-md-3 itemPeriod">
             <div className="image">
-              <div className="num"><img src="images/design/2.svg" alt="" /></div>
-              <img src="images/design/send-icon.svg" alt="" />
+              <div className="num">
+                <img loading="lazy" src="images/design/2.svg" alt="" />
+              </div>
+              <img loading="lazy" src="images/design/send-icon.svg" alt="" />
             </div>
             <h4>Gerät einsenden</h4>
-            <p>Senden Sie Ihr Gerät <strong>kostenlos</strong> mit dem vorfrankierten Versandlabel per Post zu.</p>
+            <p>
+              Senden Sie Ihr Gerät <strong>kostenlos</strong> mit dem
+              vorfrankierten Versandlabel per Post zu.
+            </p>
           </div>
           <div className="col-sm-6 col-md-3 itemPeriod">
             <div className="image">
-              <div className="num"><img src="images/design/3.svg" alt="" /></div>
-              <img src="images/design/get-icon.svg" alt="" />
+              <div className="num">
+                <img loading="lazy" src="images/design/3.svg" alt="" />
+              </div>
+              <img loading="lazy" src="images/design/get-icon.svg" alt="" />
             </div>
             <h4>Zahlung erhalten</h4>
-            <p>Nach Prüfung Ihres Gerätes wird der Betrag Express ausbezahlt.</p>
+            <p>
+              Nach Prüfung Ihres Gerätes wird der Betrag Express ausbezahlt.
+            </p>
           </div>
-          <div className='col-sm-6 col-md-3 itemPeriod'>
+          <div className="col-sm-6 col-md-3 itemPeriod">
             <div className="mac-right">
-              <a className="lightBoxVideoLink" aria-label="macbook-upd" href={url2} style={{ display: 'block', position: 'relative' }}>
-                <span className="pulse-btn-on-mac"><span className="content" /></span>
-                <SimpleImg src="/images/design/video-image.jpg" className="image-section" width="100%" style={{justifyContent: 'end'}}/>
+              <a
+                className="lightBoxVideoLink"
+                aria-label="macbook-upd"
+                href={url2}
+                style={{ display: "block", position: "relative" }}
+              >
+                <span className="pulse-btn-on-mac">
+                  <span className="content" />
+                </span>
+                <SimpleImg
+                  src="/images/design/video-image.jpg"
+                  className="image-section"
+                  width="100%"
+                  style={{ justifyContent: "end" }}
+                />
               </a>
             </div>
           </div>
         </React.Fragment>
-      )
-    }
-    else {
+      );
+    } else {
       return (
         <React.Fragment>
           <div className="col-sm-12 itemPeriod">
             <div className="image">
-              <div className="num"><img src="images/design/1.svg" alt="" /></div>
-              <img src="images/design/estimate-icon.svg" alt="" />
+              <div className="num">
+                <img loading="lazy" src="images/design/1.svg" alt="" />
+              </div>
+              <img
+                loading="lazy"
+                src="images/design/estimate-icon.svg"
+                alt=""
+              />
             </div>
             <h4>Preis berechnen</h4>
-            <p>Wählen Sie den Zustand Ihres Gerätes aus und Sie erhalten direkt einen fairen Ankaufspreis.</p>
+            <p>
+              Wählen Sie den Zustand Ihres Gerätes aus und Sie erhalten direkt
+              einen fairen Ankaufspreis.
+            </p>
           </div>
           <div className="col-sm-12 itemPeriod">
             <div className="image">
-              <div className="num"><img src="images/design/2.svg" alt="" /></div>
-              <img src="images/design/send-icon.svg" alt="" />
+              <div className="num">
+                <img loading="lazy" src="images/design/2.svg" alt="" />
+              </div>
+              <img loading="lazy" src="images/design/send-icon.svg" alt="" />
             </div>
             <h4>Gerät einsenden</h4>
-            <p>Senden Sie Ihr Gerät <strong>kostenlos</strong> mit dem vorfrankierten Versandlabel per Post zu.</p>
+            <p>
+              Senden Sie Ihr Gerät <strong>kostenlos</strong> mit dem
+              vorfrankierten Versandlabel per Post zu.
+            </p>
           </div>
           <div className="col-sm-12 itemPeriod">
             <div className="image">
-              <div className="num"><img src="images/design/3.svg" alt="" /></div>
-              <img src="images/design/get-icon.svg" alt="" />
+              <div className="num">
+                <img loading="lazy" src="images/design/3.svg" alt="" />
+              </div>
+              <img loading="lazy" src="images/design/get-icon.svg" alt="" />
             </div>
             <h4>Zahlung erhalten</h4>
-            <p>Nach Prüfung Ihres Gerätes wird der Betrag Express ausbezahlt.</p>
+            <p>
+              Nach Prüfung Ihres Gerätes wird der Betrag Express ausbezahlt.
+            </p>
           </div>
-          <div className='col-sm-12 itemPeriod'>
+          <div className="col-sm-12 itemPeriod">
             <div className="mac">
-              <a className="lightBoxVideoLink" href={url} aria-label="macbook-upd">
+              <a
+                className="lightBoxVideoLink"
+                href={url}
+                aria-label="macbook-upd"
+              >
                 <span className="pulse-btn-on-mac">
                   <span className="content" />
                 </span>
-                <SimpleImg alt="macbook-upd" src="/images/design/video-image.jpg" height="350px" width="100%" />
+                <SimpleImg
+                  alt="macbook-upd"
+                  src="/images/design/video-image.jpg"
+                  height="350px"
+                  width="100%"
+                />
               </a>
             </div>
           </div>
         </React.Fragment>
-      )
+      );
     }
   }
 
@@ -93,80 +155,136 @@ const HowItWorks = () => {
         <React.Fragment>
           <div className="col-sm-6 col-md-3 itemPeriod">
             <div className="image">
-              <div className="num"><img src="images/design/1.svg" alt="" /></div>
-              <img src="images/design/estimate-icon.svg" alt="" />
-            </div>
-            <h4>Gerät Auswählen</h4>
-            <p>Wählen Sie aus unserem  vielseitigen Angebot ein Gerät, welches Ihren Wünschen entspricht und zahlen Sie einen Top Preis</p>
-          </div>
-          <div className="col-sm-6 col-md-3 itemPeriod">
-            <div className="image">
-              <div className="num"><img src="images/design/2.svg" alt="" /></div>
-              <img src="images/design/shipment.svg" alt="" />
-            </div>
-            <h4>Versand</h4>
-            <p>Alle Geräte sind auf Lager und werden in kürzester Zeit direkt zu Ihnen nach Hause versendet</p>
-          </div>
-          <div className="col-sm-6 col-md-3 itemPeriod">
-            <div className="image">
-              <div className="num"><img src="images/design/3.svg" alt="" /></div>
-              <img src="images/design/warranty.svg" alt="" />
-            </div>
-            <h4>Garantie</h4>
-            <p>Remarket bietet mindestens 1 Jahr Garantie, sowie ein 14-tägiges Rückgaberecht auf alle erworbenen Geräte</p>
-          </div>
-          <div className='col-sm-6 col-md-3 itemPeriod'>
-              <div className="mac-right">
-                <a className="lightBoxVideoLink" aria-label="macbook-upd" href={url2} style={{ display: 'block', position: 'relative' }}>
-                  <span className="pulse-btn-on-mac">
-                    <span className="content" />
-                  </span>
-                  <SimpleImg src="/images/design/video-image.jpg" className="image-section" style={{justifyContent: 'end'}} />
-                </a>
+              <div className="num">
+                <img loading="lazy" src="images/design/1.svg" alt="" />
               </div>
-          </div>
-        </React.Fragment>
-      )
-    }
-    else {
-      return (
-        <React.Fragment>
-          <div className="col-sm-12 itemPeriod">
-            <div className="image">
-              <div className="num"><img src="images/design/1.svg" alt="" /></div>
-              <img src="images/design/estimate-icon.svg" alt="" />
+              <img
+                loading="lazy"
+                src="images/design/estimate-icon.svg"
+                alt=""
+              />
             </div>
             <h4>Gerät Auswählen</h4>
-            <p>Wählen Sie aus unserem  vielseitigen Angebot ein Gerät, welches Ihren Wünschen entspricht und zahlen Sie einen Top Preis</p>
+            <p>
+              Wählen Sie aus unserem vielseitigen Angebot ein Gerät, welches
+              Ihren Wünschen entspricht und zahlen Sie einen Top Preis
+            </p>
           </div>
-          <div className="col-sm-12 itemPeriod">
+          <div className="col-sm-6 col-md-3 itemPeriod">
             <div className="image">
-              <div className="num"><img src="images/design/2.svg" alt="" /></div>
-              <img src="images/design/shipment.svg" alt="" />
+              <div className="num">
+                <img loading="lazy" src="images/design/2.svg" alt="" />
+              </div>
+              <img loading="lazy" src="images/design/shipment.svg" alt="" />
             </div>
             <h4>Versand</h4>
-            <p>Alle Geräte sind auf Lager und werden in kürzester Zeit direkt zu Ihnen nach Hause versendet</p>
+            <p>
+              Alle Geräte sind auf Lager und werden in kürzester Zeit direkt zu
+              Ihnen nach Hause versendet
+            </p>
           </div>
-          <div className="col-sm-12 itemPeriod">
+          <div className="col-sm-6 col-md-3 itemPeriod">
             <div className="image">
-              <div className="num"><img src="images/design/3.svg" alt="" /></div>
-              <img src="images/design/warranty.svg" alt="" />
+              <div className="num">
+                <img loading="lazy" src="images/design/3.svg" alt="" />
+              </div>
+              <img loading="lazy" src="images/design/warranty.svg" alt="" />
             </div>
             <h4>Garantie</h4>
-            <p>Remarket bietet mindestens 1 Jahr Garantie, sowie ein 14 Tägiges Rückgaberecht auf alle erworbenen Geräte</p>
+            <p>
+              Remarket bietet mindestens 1 Jahr Garantie, sowie ein 14-tägiges
+              Rückgaberecht auf alle erworbenen Geräte
+            </p>
           </div>
-          <div className='col-sm-12 itemPeriod'>
-            <div className="mac">
-              <a className="lightBoxVideoLink" aria-label="macbook-upd" href={url2} style={{ display: 'block', position: 'relative' }}>
+          <div className="col-sm-6 col-md-3 itemPeriod">
+            <div className="mac-right">
+              <a
+                className="lightBoxVideoLink"
+                aria-label="macbook-upd"
+                href={url2}
+                style={{ display: "block", position: "relative" }}
+              >
                 <span className="pulse-btn-on-mac">
                   <span className="content" />
                 </span>
-                <SimpleImg src="/images/design/video-image.jpg" height="350px" width="100%" style={{justifyContent: 'end'}} />
+                <SimpleImg
+                  src="/images/design/video-image.jpg"
+                  className="image-section"
+                  style={{ justifyContent: "end" }}
+                />
               </a>
             </div>
           </div>
         </React.Fragment>
-      )
+      );
+    } else {
+      return (
+        <React.Fragment>
+          <div className="col-sm-12 itemPeriod">
+            <div className="image">
+              <div className="num">
+                <img loading="lazy" src="images/design/1.svg" alt="" />
+              </div>
+              <img
+                loading="lazy"
+                src="images/design/estimate-icon.svg"
+                alt=""
+              />
+            </div>
+            <h4>Gerät Auswählen</h4>
+            <p>
+              Wählen Sie aus unserem vielseitigen Angebot ein Gerät, welches
+              Ihren Wünschen entspricht und zahlen Sie einen Top Preis
+            </p>
+          </div>
+          <div className="col-sm-12 itemPeriod">
+            <div className="image">
+              <div className="num">
+                <img loading="lazy" src="images/design/2.svg" alt="" />
+              </div>
+              <img loading="lazy" src="images/design/shipment.svg" alt="" />
+            </div>
+            <h4>Versand</h4>
+            <p>
+              Alle Geräte sind auf Lager und werden in kürzester Zeit direkt zu
+              Ihnen nach Hause versendet
+            </p>
+          </div>
+          <div className="col-sm-12 itemPeriod">
+            <div className="image">
+              <div className="num">
+                <img loading="lazy" src="images/design/3.svg" alt="" />
+              </div>
+              <img loading="lazy" src="images/design/warranty.svg" alt="" />
+            </div>
+            <h4>Garantie</h4>
+            <p>
+              Remarket bietet mindestens 1 Jahr Garantie, sowie ein 14 Tägiges
+              Rückgaberecht auf alle erworbenen Geräte
+            </p>
+          </div>
+          <div className="col-sm-12 itemPeriod">
+            <div className="mac">
+              <a
+                className="lightBoxVideoLink"
+                aria-label="macbook-upd"
+                href={url2}
+                style={{ display: "block", position: "relative" }}
+              >
+                <span className="pulse-btn-on-mac">
+                  <span className="content" />
+                </span>
+                <SimpleImg
+                  src="/images/design/video-image.jpg"
+                  height="350px"
+                  width="100%"
+                  style={{ justifyContent: "end" }}
+                />
+              </a>
+            </div>
+          </div>
+        </React.Fragment>
+      );
     }
   }
 
@@ -179,8 +297,28 @@ const HowItWorks = () => {
 
       <div className="col-xs-12 col-md-7 buttons pl-0">
         <ul className="" role="tablist">
-          <li role="presentation" className="active"><a href="#verkaufen" className="sell text-decoration-none" style={{borderRight: 'none'}} role="tab" data-toggle="tab">Ich will verkaufen</a></li>
-          <li role="presentation"><a href="#kaufen" className="buy text-decoration-none" style={{borderLeft: 'none'}} role="tab" data-toggle="tab">Ich will kaufen</a></li>
+          <li role="presentation" className="active">
+            <a
+              href="#verkaufen"
+              className="sell text-decoration-none"
+              style={{ borderRight: "none" }}
+              role="tab"
+              data-toggle="tab"
+            >
+              Ich will verkaufen
+            </a>
+          </li>
+          <li role="presentation">
+            <a
+              href="#kaufen"
+              className="buy text-decoration-none"
+              style={{ borderLeft: "none" }}
+              role="tab"
+              data-toggle="tab"
+            >
+              Ich will kaufen
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -190,27 +328,32 @@ const HowItWorks = () => {
 
           <div className="row">
             <div className="col-xs-12 estimate-button">
-              <a href="/verkaufen" className="estimatePrice btn"> Jetzt Gerät aussuchen</a>
+              <a href="/verkaufen" className="estimatePrice btn">
+                {" "}
+                Jetzt Gerät aussuchen
+              </a>
             </div>
           </div>
         </div>
-
 
         <div role="tabpanel" className="tab-pane" id="kaufen">
           <div className="row periods">{mapPeriodsKaufen()}</div>
 
           <div className="row">
             <div className="col-xs-12 estimate-button">
-              <a href="/kaufen" className="estimatePrice btn"> Jetzt Gerät aussuchen</a>
+              <a href="/kaufen" className="estimatePrice btn">
+                {" "}
+                Jetzt Gerät aussuchen
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-HowItWorks.propTypes = {}
-HowItWorks.defaultProps = {}
+HowItWorks.propTypes = {};
+HowItWorks.defaultProps = {};
 
-export default HowItWorks
+export default HowItWorks;

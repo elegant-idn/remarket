@@ -66,27 +66,27 @@ export class Slick extends Component {
         >
           <div>
             <div className="item">
-              <img src="/images/design/store.png" />
+              <img loading="lazy" src="/images/design/store.png" />
             </div>
           </div>
           <div>
             <div className="item">
-              <img src="/images/design/slick3.png" />
+              <img loading="lazy" src="/images/design/slick3.png" />
             </div>
           </div>
           <div>
             <div className="item">
-              <img src="/images/design/slick2.png" />
+              <img loading="lazy" src="/images/design/slick2.png" />
             </div>
           </div>
           <div>
             <div className="item">
-              <img src="/images/design/slick1.png" />
+              <img loading="lazy" src="/images/design/slick1.png" />
             </div>
           </div>
           <div>
             <div className="item">
-              <img src="/images/design/slick3.png" />
+              <img loading="lazy" src="/images/design/slick3.png" />
             </div>
           </div>
         </Slider>

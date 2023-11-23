@@ -9,7 +9,7 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div className={className} style={{ ...style }} onClick={onClick}>
-      <img src="/images/design/slick-arrow.svg" alt="" />
+      <img loading="lazy" src="/images/design/slick-arrow.svg" alt="" />
     </div>
   );
 }
@@ -18,7 +18,7 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div className={className} style={{ ...style }} onClick={onClick}>
-      <img src="/images/design/slick-arrow.svg" alt="" />
+      <img loading="lazy" src="/images/design/slick-arrow.svg" alt="" />
     </div>
   );
 }
@@ -268,7 +268,7 @@ export default class ModelInfoBlockImage extends Component {
           {/*{*/}
           {/*    image.realImg.length > 0 &&*/}
           {/*    <div className={className}>*/}
-          {/*        <img src={image.mainImg.src} onClick={clickSmallImg} alt={`${altTitle} - Teil 1`}/>*/}
+          {/*        <img loading="lazy" src={image.mainImg.src} onClick={clickSmallImg} alt={`${altTitle} - Teil 1`}/>*/}
           {/*    </div>*/}
           {/*}*/}
           {image.realImg.length ? (

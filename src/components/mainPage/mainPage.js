@@ -84,19 +84,31 @@ class MainPage extends Component {
           <div className="sustainability-underline"></div>
           <div className="sustainability-cards">
             <div className="sustainability-card">
-              <img className="sustainability-img" src="/images/container.svg" />
+              <img
+                loading="lazy"
+                className="sustainability-img"
+                src="/images/container.svg"
+              />
               <div className="sustainability-card-title">
                 Weniger Elektroschrott
               </div>
             </div>
             <div className="sustainability-card">
-              <img className="sustainability-img" src="/images/ecology.svg" />
+              <img
+                loading="lazy"
+                className="sustainability-img"
+                src="/images/ecology.svg"
+              />
               <div className="sustainability-card-title">
                 Ressourcen schonen
               </div>
             </div>
             <div className="sustainability-card">
-              <img className="sustainability-img" src="/images/guarantee.svg" />
+              <img
+                loading="lazy"
+                className="sustainability-img"
+                src="/images/guarantee.svg"
+              />
               <div className="sustainability-card-title">
                 Mindestens 1 Jahr Garantie
               </div>
@@ -243,7 +255,11 @@ class MainPage extends Component {
                 <p className="title">iPhone kaufen</p>
                 <p className="link">Jetzt einkaufen &gt;</p>
                 <p className="iphoneImage">
-                  <img src="/images/design/iphone12.png" alt="iPhone kaufen" />
+                  <img
+                    loading="lazy"
+                    src="/images/design/iphone12.png"
+                    alt="iPhone kaufen"
+                  />
                 </p>
               </div>
             </div>

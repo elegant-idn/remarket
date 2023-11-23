@@ -138,7 +138,7 @@ const PurchaseProducts = ({recommendProducts, basketActions, basketData, wishlis
                         <Link to={`/kaufen/detail/zubehoer/${deviceName}/${modelName}/${item.shortcode}`}>
                             <div className='item'>
                                 <div className="img">
-                                    <img src={mainImg} alt="" />
+                                    <img loading="lazy" src={mainImg} alt="" />
                                     <i className="modelInfoBlock-img-small-searchBtn"
                                         onClick={() => openLightBox(item)}
                                         aria-hidden="true">
@@ -176,7 +176,7 @@ const PurchaseProducts = ({recommendProducts, basketActions, basketData, wishlis
                                         </div>
                                     </div>
                                     <button className='add-cart' onClick={ (e) => addToBasket(e, item)} >
-                                        <img src="/images/otherProdCart.svg" alt="" />
+                                        <img loading="lazy" src="/images/otherProdCart.svg" alt="" />
                                     </button>
                                 </div>
                             </div>
